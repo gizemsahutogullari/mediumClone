@@ -1,0 +1,312 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Medium Clone</title>
+    <!---------------------- Css&Font ---------------------->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.0.1/css/bootstrap.min.css"
+        integrity="sha512-Ez0cGzNzHR1tYAv56860NLspgUGuQw16GiOOp/I2LuTmpSK9xDXlgJz3XN4cnpXWDmkNBKXR/VDMTCnAaEooxA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+        integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+
+<body>
+
+    <!---------------------- Navbar ---------------------->
+    <nav class="navbar navbar-expand-lg bg-white border-bottom py-2">
+        <div class="container-fluid d-flex align-items-center justify-content-between">
+            <div class="d-flex align-items-center gap-3 ms-0">
+                <a class="navbar-brand fw-bold text-black" href="#">
+                    <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/b/b1/Medium_logo_Wordmark_Black.svg/640px-Medium_logo_Wordmark_Black.svg.png"
+                        alt="" style="height: 25px;">
+                </a>
+
+                <form class="d-flex" role="search">
+                    <div class="input-group rounded-pill border" style="overflow: hidden; width: 250px;">
+                        <span class="input-group-text bg-white border-0">
+                            <i class="fa-solid fa-magnifying-glass text-secondary"></i>
+                        </span>
+                        <input type="search" class="form-control border-0" placeholder="Search" aria-label="Search">
+                    </div>
+                </form>
+            </div>
+
+            <div class="d-flex align-items-center gap-4">
+                <a href="#" class="text-secondary fs-5 d-flex align-items-center gap-2 text-decoration-none">
+                    <i class="fa-regular fa-pen-to-square"></i>
+                    <span>Write</span>
+                </a>
+
+                <a href="#" class="text-secondary fs-5 text-decoration-none">
+                    <i class="fa-solid fa-bell"></i>
+                </a>
+
+                <a href="#" class="text-secondary fs-5 text-decoration-none">
+                    <i class="fa-regular fa-circle-user"></i>
+                </a>
+            </div>
+        </div>
+    </nav>
+    <!---------------------- Header ---------------------->
+    <div class="container">
+        <div class="row mt-4">
+            <div class="col-7 position-relative offset-1">
+                <div class="border-bottom py-2 bg-white">
+                    <div class="d-flex align-items-center gap-1 overflow-auto ps-2 position-relative flex-wrap"
+                        id="category-scroll" style="scroll-behavior: smooth;">
+
+                        <button class="btn p-0 me-2" data-bs-toggle="scroll" data-bs-target="#category-scroll">
+                            <i class="fa-solid fa-plus"></i>
+                        </button>
+
+                        <!-- Kategoriler -->
+                        <a href="#" class="btn rounded-pill">
+                            <span class="small fw-light">For you</span>
+                        </a>
+                        <a href="#" class="btn rounded-pill">
+                            <span class="small fw-light">Following</span>
+                        </a>
+                        <a href="#" class="btn rounded-pill position-relative">
+                            <span class="small fw-light">Featured</span>
+                            <span
+                                class="badge bg-success position-absolute top-50 start-100 translate-middle p-1 rounded-circle">
+                                <span class="visually-hidden">New</span>
+                            </span>
+                        </a>
+                        <a href="#" class="btn rounded-pill">
+                            <span class="small fw-light">Coding</span>
+                        </a>
+                        <a href="#" class="btn rounded-pill">
+                            <span class="small fw-light">Web Development</span>
+                        </a>
+                        <a href="#" class="btn rounded-pill">
+                            <span class="small fw-light">Programming</span>
+                        </a>
+                    </div>
+                </div>
+                <div>
+                    <div class="mt-5 d-flex align-items-center gap-2">
+                        <a href="#" class="text-decoration-none d-flex align-items-center">
+                            <img src="https://miro.medium.com/v2/resize:fill:40:40/1*QXfeVFVbIzUGnlwXoOZvyQ.png"
+                                alt="Profil Resmi" class="rounded-circle"
+                                style="width: 25px; height: 25px; object-fit: cover;">
+                        </a>
+                        <p class="mb-0 text-black"><small>In Let's Code Future by Let's Code Future </small></p>
+                    </div>
+                    <div class="row">
+                        <div class="col-8">
+                            <h4 class="fw-bold mt-3">
+                                10 AI Tools That Replace a Full Dev Team (Almost)
+                            </h4>
+                            <span class="text-secondary fs-6">The future isn’t coming — it’s already here. And it’s writing your code, fixing bugs, and even designing your UI.</span>
+                            <div class="d-flex justify-content-between align-items-center">
+                                <!-- Sol taraf -->
+                                <div class="d-flex align-items-center gap-4 text-secondary small mt-3">
+                                    <span><i class="fa-solid fa-star text-warning"></i></span>
+                                    <span>Apr6</span>
+                                    <div>
+                                        <span><i class="fa-solid fa-hands"></i></span>
+                                    <span>2.1K</span>
+                                    </div>
+                                    <div>
+                                        <span><i class="fa-solid fa-comment"></i></span>
+                                        <span>73</span>
+                                    </div>
+                                </div>
+                            
+                                <!-- Sağ taraf -->
+                                <div class="d-flex align-items-center gap-4 fs-5 mt-2">
+                                    <button class="bg-transparent border-0 p-0 text-secondary">
+                                        <i class="fa-regular fa-circle"></i>
+                                    </button>
+                                    <button class="bg-transparent border-0 p-0 text-secondary">
+                                        <i class="fa-regular fa-bookmark"></i>
+                                    </button>
+                                    <button class="bg-transparent border-0 p-0 text-secondary">
+                                        <i class="fa-solid fa-ellipsis"></i>
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-4 d-flex justify-content-center align-items-start pe-2 mt-3">
+                            <img src="https://miro.medium.com/v2/resize:fill:160:106/1*ypAkuD17FXJSXqu0VcjjOQ.png" alt="">
+                        </div>
+                    </div>
+                </div>
+                <div>
+                    <div class="mt-5 d-flex align-items-center gap-2">
+                        <a href="#" class="text-decoration-none d-flex align-items-center">
+                            <img src="https://miro.medium.com/v2/resize:fill:40:40/1*qyQKDMMD6-X_8biF_U-N-g.png"
+                                alt="Profil Resmi" class="rounded-circle"
+                                style="width: 25px; height: 25px; object-fit: cover;">
+                        </a>
+                        <p class="mb-0 text-black"><small>In Prototypr by Punit Chawla </small></p>
+                    </div>
+                    <div class="row">
+                        <div class="col-8">
+                            <h4 class="fw-bold mt-3">
+                                Duolingo Just Ended The Term “UX Design”
+                            </h4>
+                            <span class="text-secondary fs-6">In a surprising turn of events, the Head of UX at Duolingo — Mig Reyes announced on LinkedIn that the company has decided to completely…</span>
+                            <div class="d-flex justify-content-between align-items-center">
+                                <!-- Sol taraf -->
+                                <div class="d-flex align-items-center gap-4 text-secondary small mt-3">
+                                    <span><i class="fa-solid fa-star text-warning"></i></span>
+                                    <span>Apr6</span>
+                                    <div>
+                                        <span><i class="fa-solid fa-hands"></i></span>
+                                    <span>2.1K</span>
+                                    </div>
+                                    <div>
+                                        <span><i class="fa-solid fa-comment"></i></span>
+                                        <span>73</span>
+                                    </div>
+                                </div>
+                            
+                                <!-- Sağ taraf -->
+                                <div class="d-flex align-items-center gap-4 fs-5 mt-2">
+                                    <button class="bg-transparent border-0 p-0 text-secondary">
+                                        <i class="fa-regular fa-circle"></i>
+                                    </button>
+                                    <button class="bg-transparent border-0 p-0 text-secondary">
+                                        <i class="fa-regular fa-bookmark"></i>
+                                    </button>
+                                    <button class="bg-transparent border-0 p-0 text-secondary">
+                                        <i class="fa-solid fa-ellipsis"></i>
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-4 d-flex justify-content-center align-items-start pe-2 mt-3">
+                            <img src="https://miro.medium.com/v2/resize:fill:320:214/1*wXW4MoVuiLhrC2C0cG0u2w.png" class="img-fluid" style="max-width: 170px;">
+                        </div>
+                    </div>
+                </div>
+                <div>
+                    <div class="mt-5 d-flex align-items-center gap-2">
+                        <a href="#" class="text-decoration-none d-flex align-items-center">
+                            <img src="https://miro.medium.com/v2/resize:fill:40:40/1*zT6K7hMwNoj89nKhGfL7Hg.png"
+                                alt="Profil Resmi" class="rounded-circle"
+                                style="width: 205x; height: 25px; object-fit: cover;">
+                        </a>
+                        <p class="mb-0 text-black"><small>In Everyday AI by Manpreet Singh </small></p>
+                    </div>
+                    <div class="row">
+                        <div class="col-8">
+                            <h4 class="fw-bold mt-3">
+                                Goodbye RAG? Gemini 2.0 Flash Have Just Killed It!
+                            </h4>
+                            <span class="text-secondary fs-6">Alright!!!</span>
+                            <div class="d-flex justify-content-between align-items-center">
+                                <!-- Sol taraf -->
+                                <div class="d-flex align-items-center gap-4 text-secondary small mt-3">
+                                    <span><i class="fa-solid fa-star text-warning"></i></span>
+                                    <span>Apr6</span>
+                                    <div>
+                                        <span><i class="fa-solid fa-hands"></i></span>
+                                    <span>2.1K</span>
+                                    </div>
+                                    <div>
+                                        <span><i class="fa-solid fa-comment"></i></span>
+                                        <span>73</span>
+                                    </div>
+                                </div>
+                            
+                                <!-- Sağ taraf -->
+                                <div class="d-flex align-items-center gap-4 fs-5 mt-2">
+                                    <button class="bg-transparent border-0 p-0 text-secondary">
+                                        <i class="fa-regular fa-circle"></i>
+                                    </button>
+                                    <button class="bg-transparent border-0 p-0 text-secondary">
+                                        <i class="fa-regular fa-bookmark"></i>
+                                    </button>
+                                    <button class="bg-transparent border-0 p-0 text-secondary">
+                                        <i class="fa-solid fa-ellipsis"></i>
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-4 d-flex justify-content-center align-items-start pe-2 mt-3">
+                            <img src="https://miro.medium.com/v2/resize:fill:320:214/1*uFbaWri2lJTX70PSGZGQeQ.png" class="img-fluid" style="max-width: 170px;" >
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-3 offset-1 mt-4 border-start ps-5">
+                <div>
+                    <h6>Staff Pics</h6>
+                    <div>
+                        <div class="mt-4 d-flex align-items-center gap-2">
+                            <a href="#" class="text-decoration-none d-flex align-items-center">
+                                <img src="https://miro.medium.com/v2/resize:fill:40:40/1*Z06HflhKbMIQt-gQ4MoqJA.jpeg"
+                                    alt="Profil Resmi" class="rounded-circle"
+                                    style="width: 25px; height: 25px; object-fit: cover;">
+                            </a>
+                            <p class="mb-0 text-black"><small>Daniel B. Gallagher</small></p>
+                        </div>
+                        <h6 class="fw-bold mt-2">I worked for Pope Francis. Here is what he was really like.</h6>
+                        <span class="small text-secondary">5d ago</span>
+                    </div>
+                    <div>
+                        <div class="mt-4 d-flex align-items-center gap-2">
+                            <a href="#" class="text-decoration-none d-flex align-items-center">
+                                <img src="https://miro.medium.com/v2/resize:fill:40:40/1*Z06HflhKbMIQt-gQ4MoqJA.jpeg"
+                                    alt="Profil Resmi" class="rounded-circle"
+                                    style="width: 25px; height: 25px; object-fit: cover;">
+                            </a>
+                            <p class="mb-0 text-black"><small>Vaibhavi Naik</small></p>
+                        </div>
+                        <h6 class="fw-bold mt-2">My Notes App Is a Beautiful Mess of Creativity and Chaos</h6>
+                        <span class="small text-secondary">Apr 17</span>
+                    </div>
+                    <div>
+                        <div class="mt-4 d-flex align-items-center gap-2">
+                            <a href="#" class="text-decoration-none d-flex align-items-center">
+                                <img src="https://miro.medium.com/v2/resize:fill:40:40/1*Z06HflhKbMIQt-gQ4MoqJA.jpeg"
+                                    alt="Profil Resmi" class="rounded-circle"
+                                    style="width: 25px; height: 25px; object-fit: cover;">
+                            </a>
+                            <p class="mb-0 text-black"><small>Julie Zhuo</small></p>
+                        </div>
+                        <h6 class="fw-bold mt-2">Our Souls Need Proof of Work</h6>
+                        <span class="small text-secondary">Mar 10</span>
+                    </div>
+                    <p class="small text-secondary mt-2 ">
+                        <a href="#" class="text-secondary text-decoration-none">See the full list</a>
+                    </p>
+                </div>
+                <div class="mt-5">
+                    <h6>Recommended Topics</h6>
+                    <div class="d-flex flex-wrap gap-3 mt-3">
+                        <a href="#" class="btn btn-light rounded-pill btn-sm">Data Science</a>
+                        <a href="#" class="btn btn-light rounded-pill btn-sm">Web Development</a>
+                        <a href="#" class="btn btn-light rounded-pill btn-sm">Machine Learning</a>
+                        <a href="#" class="btn btn-light rounded-pill btn-sm">Programming</a>
+                        <a href="#" class="btn btn-light rounded-pill btn-sm">Technology</a>
+                        <a href="#" class="btn btn-light rounded-pill btn-sm">Artificial Intelligence</a>
+                        <a href="#" class="btn btn-light rounded-pill btn-sm">Cybersecurity</a>
+                    </div>
+                    <p class="small text-secondary mt-3 ">
+                        <a href="#" class="text-secondary text-decoration-none">See more topics</a>
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+
+
+
+    <!---------------------- Script ---------------------->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.3/js/bootstrap.min.js"
+        integrity="sha512-ykZ1QQr0Jy/4ZkvKuqWn4iF3lqPZyij9iRv6sGqLRdTPkY69YX6+7wvVGmsdBbiIfN/8OdsI7HABjvEok6ZopQ=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+</body>
+
+</html>
